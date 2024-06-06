@@ -2,3 +2,66 @@
   padding: 0px 0px 0px 0px;
   margin: 0px;
 }
+
+#place-item-list{
+  display: "grid";
+  grid-template-columns:"1fr 1fr 1fr";
+  grid-template-rows: "1fr 1fr 1fr";
+  gap: "20px";
+  height:"70vh";
+  overflow-y: auto;
+  margin-top: 20px;
+         
+}
+#sidebar{
+  background-color: white;
+}
+#top-content{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 100%;
+
+}
+
+#content{
+  position: fixed;
+  left: 80px;
+  width: calc(100% - 80px);
+  background-color: #E0EDED;
+}
+.custominput{
+  height: 2.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #top-content{
+    flex-direction: column;
+    
+    }
+  #sidebar{
+    display: none;
+  }
+
+  #content{
+    position: fixed;
+    left: 0px;
+    width: 100% 
+  }
+  
+
+}
+
+@media only screen and (max-width: 550px) {
+
+  .custominput{
+    width: 11rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  .custominput{
+    width: 8rem;
+  }
+}
